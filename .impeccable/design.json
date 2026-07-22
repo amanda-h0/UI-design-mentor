@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-07-22T09:31:43.620Z",
+  "title": "Design System: Design Mentor",
+  "extensions": {
+    "colorMeta": {
+      "mentor-blue": { "role": "primary", "displayName": "Mentor Blue", "canonical": "#245b78", "tonalRamp": ["#0b202b", "#12394c", "#1a526d", "#246f91", "#4d8da9", "#82b2c9", "#bdd9e7", "#edf7fb"] },
+      "sky-guidance": { "role": "secondary", "displayName": "Sky Guidance", "canonical": "#cfebff", "tonalRamp": ["#102734", "#1d465d", "#2e6786", "#4889ad", "#73afd2", "#a6d3ed", "#cfebff", "#f2faff"] },
+      "peach-warmth": { "role": "tertiary", "displayName": "Peach Warmth", "canonical": "#ffbe91", "tonalRamp": ["#381b0c", "#66351e", "#985334", "#c9744d", "#ec986e", "#ffbe91", "#ffddc7", "#fff4eb"] },
+      "apricot-highlight": { "role": "tertiary", "displayName": "Apricot Highlight", "canonical": "#ffddb0", "tonalRamp": ["#34240e", "#62451e", "#936a33", "#c6904d", "#eab874", "#ffddb0", "#ffecd0", "#fff8ed"] },
+      "cream-canvas": { "role": "neutral", "displayName": "Cream Canvas", "canonical": "#fffce1", "tonalRamp": ["#292719", "#4a4730", "#6e6948", "#948e63", "#bab486", "#ded9ad", "#fffce1", "#fffef5"] },
+      "warm-surface": { "role": "neutral", "displayName": "Warm Surface", "canonical": "#fffef7", "tonalRamp": ["#282721", "#494740", "#6c6960", "#918e84", "#b8b5aa", "#dcdbd2", "#fffef7", "#ffffff"] },
+      "charcoal-ink": { "role": "neutral", "displayName": "Charcoal Ink", "canonical": "#252724", "tonalRamp": ["#121311", "#252724", "#454842", "#686c64", "#8e9289", "#b7bab3", "#dfe1dc", "#f5f6f3"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Welcoming home-page statements up to 56px." },
+      "headline": { "displayName": "Headline", "purpose": "Page and Design Review titles." },
+      "title": { "displayName": "Section title", "purpose": "Sections and prominent cards." },
+      "body": { "displayName": "Body", "purpose": "Educational explanations and recommendations." },
+      "label": { "displayName": "Label", "purpose": "Sentence-case navigation, metadata, and field labels." }
+    },
+    "shadows": [
+      { "name": "soft-ambient-lift", "value": "0 10px 32px rgb(79 61 35 / .08)", "purpose": "Quiet separation for top-level cards and calls to action." },
+      { "name": "screenshot-lift", "value": "0 12px 32px rgb(37 39 36 / .1)", "purpose": "Separates uploaded artwork from its warm staging surface." },
+      { "name": "overlay-lift", "value": "0 10px 30px rgb(37 39 36 / .1)", "purpose": "Temporary overlays only." }
+    ],
+    "motion": [
+      { "name": "interaction-fast", "value": "150ms ease", "purpose": "Button color and one-pixel hover lift." },
+      { "name": "surface-fast", "value": "160ms ease", "purpose": "Card hover and skip-link movement." },
+      { "name": "score-progress", "value": "280ms ease", "purpose": "Explains score-ring progress without decorative looping." }
+    ],
+    "breakpoints": [
+      { "name": "mobile", "value": "640px" },
+      { "name": "compact", "value": "860px" },
+      { "name": "wide", "value": "1100px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The single dominant action within a region.",
+      "html": "<button class=\"ds-btn-primary\">Start a Design Review <span aria-hidden=\"true\">&rarr;</span></button>",
+      "css": ".ds-btn-primary { min-height: 44px; display: inline-flex; align-items: center; justify-content: center; gap: 9px; padding: 11px 18px; border: 0; border-radius: 14px; background: var(--brand, #245b78); color: #fffef7; font: 700 16px/1.4 'Helvetica Neue', Helvetica, Arial, sans-serif; cursor: pointer; transition: background 150ms ease, transform 150ms ease; } .ds-btn-primary:hover { background: var(--brand-hover, #19465f); transform: translateY(-1px); } .ds-btn-primary:focus-visible { outline: 3px solid var(--focus, #245fc4); outline-offset: 3px; }"
+    },
+    {
+      "name": "Secondary button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "A supporting action that stays available without competing.",
+      "html": "<button class=\"ds-btn-secondary\">Compare versions</button>",
+      "css": ".ds-btn-secondary { min-height: 44px; padding: 10px 15px; border: 1px solid var(--line-strong, #a98a68); border-radius: 14px; background: transparent; color: var(--ink, #252724); font: 600 14px/1.4 'Helvetica Neue', Helvetica, Arial, sans-serif; cursor: pointer; transition: background 150ms ease; } .ds-btn-secondary:hover { background: var(--surface-muted, #fff1d2); } .ds-btn-secondary:focus-visible { outline: 3px solid var(--focus, #245fc4); outline-offset: 3px; }"
+    },
+    {
+      "name": "Text field",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "A persistent-label field for project context.",
+      "html": "<label class=\"ds-field\"><span>Project title</span><input value=\"Mobile Fitness App Redesign\" readonly></label>",
+      "css": ".ds-field { display: flex; flex-direction: column; gap: 7px; color: var(--ink, #252724); font: 600 12px/1.5 'Helvetica Neue', Helvetica, Arial, sans-serif; } .ds-field input { width: 100%; min-height: 46px; box-sizing: border-box; padding: 10px 12px; border: 1px solid var(--line-strong, #a98a68); border-radius: 14px; background: var(--surface, #fffef7); color: var(--ink, #252724); font: 400 16px/1.5 'Helvetica Neue', Helvetica, Arial, sans-serif; } .ds-field input:focus-visible { border-color: var(--focus, #245fc4); outline: 0; box-shadow: 0 0 0 3px rgb(36 95 196 / .15); }"
+    },
+    {
+      "name": "Review card",
+      "kind": "card",
+      "refersTo": "review-card",
+      "description": "A top-level surface for the latest Design Review.",
+      "html": "<article class=\"ds-review-card\"><span>Latest Design Review</span><h3>Mobile Fitness App Redesign</h3><p>See what is working, understand the evidence, and choose a useful next step.</p></article>",
+      "css": ".ds-review-card { max-width: 420px; padding: 28px; border: 1px solid rgb(169 138 104 / .18); border-radius: 20px; background: var(--surface, #fffef7); color: var(--ink, #252724); box-shadow: 0 10px 32px rgb(79 61 35 / .08); font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; } .ds-review-card > span { color: var(--brand, #245b78); font-size: 12px; font-weight: 600; } .ds-review-card h3 { margin: 12px 0 8px; font-size: 24px; line-height: 1.2; letter-spacing: -.02em; } .ds-review-card p { margin: 0; color: var(--ink-soft, #57594f); font-size: 16px; line-height: 1.55; }"
+    },
+    {
+      "name": "Status badge",
+      "kind": "chip",
+      "description": "A text-and-marker treatment for confidence, priority, or review state.",
+      "html": "<span class=\"ds-status-badge\"><i aria-hidden=\"true\"></i> Design Review complete</span>",
+      "css": ".ds-status-badge { min-height: 28px; display: inline-flex; align-items: center; gap: 6px; padding: 4px 9px; border-radius: 999px; background: #e0efe7; color: #2b6a50; font: 700 12px/1.4 'Helvetica Neue', Helvetica, Arial, sans-serif; } .ds-status-badge i { width: 8px; height: 8px; border-radius: 50%; background: #397a5f; }"
+    },
+    {
+      "name": "Primary navigation",
+      "kind": "nav",
+      "description": "A calm sentence-case navigation that remains available on mobile.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Primary navigation\"><a class=\"active\" href=\"#\">Home</a><a href=\"#\">Design reviews</a><a href=\"#\">How reviews work</a></nav>",
+      "css": ".ds-nav { display: flex; align-items: center; gap: 34px; overflow-x: auto; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; } .ds-nav a { position: relative; padding: 8px 0; color: var(--ink-soft, #57594f); font-size: 14px; font-weight: 600; text-decoration: none; white-space: nowrap; } .ds-nav a:hover, .ds-nav a.active { color: var(--ink, #252724); } .ds-nav a.active::after { position: absolute; right: 0; bottom: 0; left: 0; height: 2px; background: var(--brand, #245b78); content: ''; } .ds-nav a:focus-visible { outline: 3px solid var(--focus, #245fc4); outline-offset: 3px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "Sunlit Studio",
+    "overview": "Design Mentor feels like working beside a trusted designer in a bright, welcoming studio. Warm cream surfaces create ease and generosity; clear blue accents provide direction; peach and apricot add selective human warmth around observations and encouragement. The user's interface remains the most visually important artifact. The system is modern and minimal without becoming sterile. Components are warm and quietly confident: rounded, spacious, legible, and calm.",
+    "keyCharacteristics": ["Warm neutral light with dependable blue guidance.", "One conversational sans-serif voice.", "Generous whitespace and clear grouping.", "Soft ambient lift on meaningful surfaces.", "Encouraging review language with visible evidence and uncertainty."],
+    "rules": [
+      { "name": "The Warmth Leads Rule", "body": "Cream is the environment, blue is the guide, and peach is an accent; no screen should become a field of competing pastel cards.", "section": "colors" },
+      { "name": "The Dark Text on Pastels Rule", "body": "Peach, apricot, cream, and sky surfaces always use dark text.", "section": "colors" },
+      { "name": "The Meaning Twice Rule", "body": "Status, priority, confidence, and score changes pair color with text, iconography, or position.", "section": "colors" },
+      { "name": "The One Voice Rule", "body": "Use Helvetica Neue throughout; do not introduce Georgia, another serif, Inter, or a display typeface.", "section": "typography" },
+      { "name": "The Sentence Case Rule", "body": "Navigation, labels, buttons, headings, metadata, and statuses use sentence case. Avoid all-caps styling and artificial tracking.", "section": "typography" },
+      { "name": "The Soft Lift Rule", "body": "Shadows create quiet separation, never floating-card spectacle. Do not stack shadows or nest elevated cards.", "section": "elevation" }
+    ],
+    "dos": ["Do make the screenshot and Design Review the clearest focal point.", "Do use warm, educational language that explains evidence and preserves user agency.", "Do create hierarchy with size, weight, spacing, and selective color.", "Do keep body copy at 16px and essential targets at least 44px.", "Do preserve visible keyboard focus, reduced-motion support, and non-color status cues."],
+    "donts": ["Don't use Georgia, serif typography, mixed font families, all-caps labels, or editorial report styling.", "Don't describe the product as an AI critic, chatbot, analytics dashboard, or final authority.", "Don't overuse scores, metrics, bordered grids, pastel card collections, or nested elevated surfaces.", "Don't use heavy gradients, glassmorphism, dark AI aesthetics, decorative glows, or corporate data-table density.", "Don't claim screenshot review certifies usability or accessibility."]
+  }
+}

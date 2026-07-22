@@ -1,0 +1,48 @@
+<svg width="1080" height="760" viewBox="0 0 1080 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1080" height="760" fill="#E8E4DC"/>
+  <rect x="42" y="40" width="996" height="680" rx="22" fill="#F9FAF6"/>
+  <rect x="42" y="40" width="220" height="680" rx="22" fill="#203E39"/>
+  <circle cx="82" cy="82" r="17" fill="#D5E8DD"/>
+  <path d="M74 83C77 76 82 72 91 73C87 76 85 80 84 87C80 85 77 84 74 83Z" fill="#315A52"/>
+  <text x="111" y="89" fill="#FAF7F2" font-family="Arial, sans-serif" font-size="22" font-weight="700">Form</text>
+  <g font-family="Arial, sans-serif" font-size="15">
+    <rect x="61" y="138" width="182" height="46" rx="10" fill="#315A52"/>
+    <circle cx="82" cy="161" r="5" fill="#DCEBDD"/>
+    <text x="100" y="167" fill="white" font-weight="700">Overview</text>
+    <text x="100" y="226" fill="#BFD1CC">Plans</text>
+    <text x="100" y="274" fill="#BFD1CC">Activity</text>
+    <text x="100" y="322" fill="#BFD1CC">Progress</text>
+    <text x="100" y="370" fill="#BFD1CC">Community</text>
+  </g>
+  <circle cx="82" cy="659" r="18" fill="#D8B9A6"/>
+  <text x="111" y="655" fill="white" font-family="Arial, sans-serif" font-size="13" font-weight="700">Alex Morgan</text>
+  <text x="111" y="674" fill="#A9C0BA" font-family="Arial, sans-serif" font-size="11">Starter plan</text>
+  <text x="300" y="88" fill="#737A74" font-family="Arial, sans-serif" font-size="13" font-weight="700">MONDAY, JULY 20</text>
+  <text x="300" y="130" fill="#252724" font-family="Georgia, serif" font-size="36" font-weight="700">Good morning, Alex</text>
+  <text x="300" y="158" fill="#737A74" font-family="Arial, sans-serif" font-size="14">Your weekly movement plan is on track.</text>
+  <rect x="300" y="194" width="452" height="220" rx="18" fill="#DDEBE2"/>
+  <text x="329" y="230" fill="#315A52" font-family="Arial, sans-serif" font-size="13" font-weight="700">WEEKLY ACTIVITY</text>
+  <text x="329" y="283" fill="#24332F" font-family="Georgia, serif" font-size="45" font-weight="700">4 of 5</text>
+  <text x="329" y="309" fill="#66726B" font-family="Arial, sans-serif" font-size="13">workouts completed</text>
+  <path d="M337 367C388 340 415 347 456 315C498 283 535 344 580 293C617 251 665 280 717 244" stroke="#315A52" stroke-width="5" stroke-linecap="round"/>
+  <path d="M337 367C388 340 415 347 456 315C498 283 535 344 580 293C617 251 665 280 717 244V388H337V367Z" fill="#BBD5C5" fill-opacity="0.55"/>
+  <rect x="771" y="194" width="227" height="220" rx="18" fill="#F4E5D7"/>
+  <circle cx="884" cy="274" r="52" stroke="#E2C2A5" stroke-width="12"/>
+  <path d="M884 222A52 52 0 0 1 930 298" stroke="#9B6242" stroke-width="12" stroke-linecap="round"/>
+  <text x="859" y="282" fill="#70462F" font-family="Arial, sans-serif" font-size="24" font-weight="700">68%</text>
+  <text x="825" y="359" fill="#70462F" font-family="Arial, sans-serif" font-size="14" font-weight="700">Weekly goal</text>
+  <rect x="300" y="442" width="698" height="223" rx="18" fill="white" stroke="#E1DED6"/>
+  <text x="329" y="481" fill="#252724" font-family="Arial, sans-serif" font-size="18" font-weight="700">Today’s plan</text>
+  <text x="913" y="481" fill="#315A52" font-family="Arial, sans-serif" font-size="13" font-weight="700">View all</text>
+  <rect x="329" y="510" width="640" height="62" rx="12" fill="#F3F4EF"/>
+  <circle cx="361" cy="541" r="18" fill="#DCEBDD"/>
+  <text x="393" y="537" fill="#252724" font-family="Arial, sans-serif" font-size="14" font-weight="700">Lower body strength</text>
+  <text x="393" y="557" fill="#7D817B" font-family="Arial, sans-serif" font-size="12">32 min · Intermediate</text>
+  <rect x="833" y="524" width="112" height="36" rx="9" fill="#315A52"/>
+  <text x="861" y="547" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="700">Start now</text>
+  <rect x="329" y="587" width="640" height="54" rx="12" fill="#F8F7F3"/>
+  <circle cx="361" cy="614" r="18" fill="#F1E3D7"/>
+  <text x="393" y="611" fill="#252724" font-family="Arial, sans-serif" font-size="14" font-weight="700">Evening mobility</text>
+  <text x="393" y="630" fill="#92958F" font-family="Arial, sans-serif" font-size="12">18 min · Recovery</text>
+  <text x="884" y="619" fill="#315A52" font-family="Arial, sans-serif" font-size="12" font-weight="700">Preview</text>
+</svg>
